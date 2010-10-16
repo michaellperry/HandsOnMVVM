@@ -11,7 +11,7 @@ namespace Step6.DataAccess
             {
                 FirstName = "Mark",
                 LastName = "Benford",
-                Email = "mark.benford@cia.gov",
+                Email = "mark.benford@fbi.gov",
                 Phone = "876 432-8765"
             };
         }
@@ -23,21 +23,21 @@ namespace Step6.DataAccess
             {
                 FirstName = "Mark",
                 LastName = "Benford",
-                Email = "mark.benford@cia.gov",
+                Email = "mark.benford@fbi.gov",
                 Phone = "876 432-8765"
             });
             contactList.AddPerson(new Person()
             {
                 FirstName = "Demitri",
                 LastName = "Noh",
-                Email = "demitri.noh@cia.gov",
+                Email = "demitri.noh@fbi.gov",
                 Phone = "876 432-8765"
             });
             contactList.AddPerson(new Person()
             {
                 FirstName = "Janis",
                 LastName = "Hawk",
-                Email = "janis.hawk@cia.gov",
+                Email = "janis.hawk@fbi.gov",
                 Phone = "876 432-8765"
             });
             return contactList;

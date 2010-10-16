@@ -11,7 +11,7 @@ namespace Step4.DataAccess
             {
                 FirstName = "Mark",
                 LastName = "Benford",
-                Email = "mark.benford@cia.gov",
+                Email = "mark.benford@fbi.gov",
                 Phone = "876 432-8765"
             };
         }

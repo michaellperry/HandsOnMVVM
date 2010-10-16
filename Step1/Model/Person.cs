@@ -19,9 +19,7 @@ namespace Hands_On_MVVM.Model
             set
             {
                 _firstName = value;
-                FirePropertyChanged("Title");
-                FirePropertyChanged("DisplayAsOptions");
-                FirePropertyChanged("DisplayAs");
+                FirePropertyChanged("FirstName");
             }
         }
 
@@ -31,9 +29,7 @@ namespace Hands_On_MVVM.Model
             set
             {
                 _lastName = value;
-                FirePropertyChanged("Title");
-                FirePropertyChanged("DisplayAsOptions");
-                FirePropertyChanged("DisplayAs");
+                FirePropertyChanged("LastName");
             }
         }
 
@@ -43,22 +39,31 @@ namespace Hands_On_MVVM.Model
             set
             {
                 _email = value;
-                FirePropertyChanged("Title");
-                FirePropertyChanged("DisplayAsOptions");
-                FirePropertyChanged("DisplayAs");
+                FirePropertyChanged("Email");
             }
         }
 
         public string Phone
         {
             get { return _phone; }
-            set { _phone = value; }
+            set
+            {
+                _phone = value;
+                FirePropertyChanged("Phone");
+            }
         }
 
         public DisplayStrategy DisplayStrategy
         {
             get { return _displayStrategy; }
-            set { _displayStrategy = value; FirePropertyChanged("Title"); }
+            set
+            {
+                if (_displayStrategy != value)
+                {
+                    _displayStrategy = value;
+                    FirePropertyChanged("DisplayStrategy");
+                }
+            }
         }
 
         public string DisplayUsingStrategy(DisplayStrategy displayStrategy)

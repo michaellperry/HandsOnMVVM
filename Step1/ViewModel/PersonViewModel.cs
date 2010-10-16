@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Hands_On_MVVM.Model;
+using System.ComponentModel;
 
 namespace Hands_On_MVVM.ViewModel
 {
-    public class PersonViewModel
+    public class PersonViewModel : INotifyPropertyChanged
     {
         private Person _person;
 
         public PersonViewModel(Person person)
         {
             _person = person;
+
+            _person.PropertyChanged += Person_PropertyChanged;
         }
 
         public string FirstName
@@ -65,5 +68,20 @@ namespace Hands_On_MVVM.ViewModel
                         _person.DisplayStrategy = strategy;
             }
         }
+
+        void Person_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            FirePropertyChanged("Title");
+            FirePropertyChanged("DisplayAsOptions");
+            FirePropertyChanged("DisplayAs");
+        }
+ 
+        private void FirePropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

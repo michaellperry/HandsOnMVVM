@@ -1,0 +1,54 @@
+<Hands_On_MVVM_ViewModel:ContactsViewModel xmlns:Hands_On_MVVM_ViewModel="clr-namespace:Hands_On_MVVM.ViewModel" xmlns:Hands_On_MVVM_Model="clr-namespace:Hands_On_MVVM.Model">
+	<Hands_On_MVVM_ViewModel:ContactsViewModel.People>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Curabitur aenean phasellus">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="Email" Email="Class vestibulum nam mauris" FirstName="Sed nullam consequat curae adipiscing" LastName="Convallis donec dis dignissim est" Phone="Etiam maecenas"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Fusce lorem praesent cras morbi">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="LastFirst" Email="Hac parturient elementum facilisis" FirstName="Duis vestibulum" LastName="Nunc leo aptent mus aliquam" Phone="Nulla vestibulum proin integer"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Auctor adipiscing augue quisque">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="FirstLast" Email="Vivamus congue accumsan" FirstName="Parturient vestibulum bibendum amet fermentum" LastName="Nec aliquam dictumst cursus" Phone="Ante arcu dictum dolor"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Non fames">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="FirstLast" Email="Aliquet fringilla blandit commodo diam" FirstName="Conubia habitasse" LastName="Hendrerit eleifend vestibulum himenaeos facilisi" Phone="Eget felis"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Per sed faucibus adipiscing ipsum">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="Email" Email="Parturient vestibulum elit" FirstName="Sem sit enim" LastName="Cubilia habitant dapibus" Phone="Lectus erat libero"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Vestibulum egestas">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="LastFirst" Email="Eros justo euismod vel adipiscing" FirstName="Nibh nisi nam" LastName="Sed parturient nisl vestibulum ligula" Phone="Lacus litora luctus"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Dis feugiat gravida vestibulum nunc">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="LastFirst" Email="Magnis mattis" FirstName="Inceptos mauris" LastName="Mollis interdum imperdiet lorem montes" Phone="Iaculis nostra malesuada odio est"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Adipiscing lacinia hac lobortis nascetur">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="Email" Email="Orci parturient penatibus pede porttitor" FirstName="Quam tincidunt magna massa" LastName="Quis metus pharetra" Phone="Tristique leo ornare ultricies vestibulum"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Venenatis laoreet natoque posuere">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="Email" Email="Morbi vulputate" FirstName="Potenti platea" LastName="Curabitur urna" Phone="Cras neque primis vestibulum"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+		<Hands_On_MVVM_ViewModel:PersonItemViewModel Display="Adipiscing phasellus parturient consequat">
+			<Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+				<Hands_On_MVVM_Model:Person DisplayStrategy="LastFirst" Email="Duis pretium netus vestibulum" FirstName="Nulla rhoncus rutrum sodales mus" LastName="Nunc vestibulum viverra convallis" Phone="Dignissim amet nec placerat aliquam"/>
+			</Hands_On_MVVM_ViewModel:PersonItemViewModel.Person>
+		</Hands_On_MVVM_ViewModel:PersonItemViewModel>
+	</Hands_On_MVVM_ViewModel:ContactsViewModel.People>
+</Hands_On_MVVM_ViewModel:ContactsViewModel>

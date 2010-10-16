@@ -47,25 +47,24 @@ namespace Hands_On_MVVM.ViewModel
             get { return String.Format("Person - {0}", _person.DisplayUsingStrategy(_person.DisplayStrategy)); }
         }
 
-        public IEnumerable<string> DisplayAsOptions
+        public IEnumerable<DisplayStrategyVewModel> DisplayAsOptions
         {
             get
             {
                 return
                     from value in Enum.GetValues(typeof(DisplayStrategy))
                         .OfType<DisplayStrategy>()
-                    select _person.DisplayUsingStrategy(value);
+                    select new DisplayStrategyVewModel(_person, value);
             }
         }
 
-        public string DisplayAs
+        public DisplayStrategyVewModel DisplayAs
         {
-            get { return _person.DisplayUsingStrategy(_person.DisplayStrategy); }
+            get { return new DisplayStrategyVewModel(_person, _person.DisplayStrategy); }
             set
             {
-                foreach (DisplayStrategy strategy in Enum.GetValues(typeof(DisplayStrategy)))
-                    if (_person.DisplayUsingStrategy(strategy) == value)
-                        _person.DisplayStrategy = strategy;
+                if (value != null)
+                    _person.DisplayStrategy = value.DisplayStrategy;
             }
         }
 

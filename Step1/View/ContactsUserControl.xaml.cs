@@ -9,16 +9,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Hands_On_MVVM
+namespace Hands_On_MVVM.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ContactsUserControl.xaml
     /// </summary>
-    public partial class PersonWindow : Window
+    public partial class ContactsUserControl : UserControl
     {
-        public PersonWindow()
+        public ContactsUserControl()
         {
             InitializeComponent();
         }

@@ -16,8 +16,8 @@ namespace Hands_On_MVVM
                 new RoutedEventHandler(TextBox_GotFocus));
 
             DataSource dataSource = new DataSource();
-            this.MainWindow = new PersonWindow();
-            this.MainWindow.DataContext = new PersonViewModel(dataSource.GetPerson());
+            this.MainWindow = new ContactsWindow();
+            this.MainWindow.DataContext = new ContactsViewModel(dataSource.LoadContacts());
             this.MainWindow.Show();
         }
 

@@ -1,7 +1,13 @@
-﻿<UserControl
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Step1.View.PersonUserControl"
-    Background="#FF353535" d:DesignWidth="415.007" d:DesignHeight="280.387">
+﻿<UserControl 
+    x:Class="Hands_On_MVVM.View.PersonUserControl" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" 
+    Background="#FF353535" 
+    d:DesignWidth="415.007" 
+    d:DesignHeight="280.387">
 	<UserControl.Resources>
 		<DataTemplate x:Key="StringTemplate">
 			<StackPanel>
@@ -33,10 +39,10 @@
         <Label Grid.Row="2" Target="{Binding ElementName=email}" Content="_Email:"/>
         <Label Grid.Row="3" Target="{Binding ElementName=phone}" Content="_Phone:"/>
             
-        <TextBox Grid.Row="0" Grid.Column="1" x:Name="firstName" Text="{Binding FirstName}" d:DataContext="{d:DesignData /SampleData/PersonViewModelSampleData.xaml}" />
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="lastName" Text="{Binding LastName}" d:DataContext="{d:DesignData /SampleData/PersonViewModelSampleData.xaml}" />
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="email" Text="{Binding Email}" d:DataContext="{d:DesignData /SampleData/PersonViewModelSampleData.xaml}" />
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="phone" Text="{Binding Phone}" d:DataContext="{d:DesignData /SampleData/PersonViewModelSampleData.xaml}" />
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="firstName" Text="{Binding FirstName}" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="lastName" Text="{Binding LastName}" />
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="email" Text="{Binding Email}" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="phone" Text="{Binding Phone}" />
         <Label Content="Display As:" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,5,0,5"/>
         <ComboBox Grid.Column="1" Grid.Row="4" d:LayoutOverrides="Height" ItemTemplate="{DynamicResource StringTemplate1}" ItemsSource="{Binding DisplayAsOptions}" VerticalAlignment="Center" SelectedItem="{Binding DisplayAs}"/>
     </Grid>

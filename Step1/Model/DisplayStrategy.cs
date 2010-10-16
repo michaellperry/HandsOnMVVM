@@ -1,6 +1,6 @@
 using System;
 
-namespace Step1.Model
+namespace Hands_On_MVVM.Model
 {
     public enum DisplayStrategy
     {

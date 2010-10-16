@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{04CEAB3B-9187-4B30-8A45-EF5936398C8C}</ProjectGuid>
+    <ProjectGuid>{7BBEF6F5-C919-4708-966A-ACAE3CFE5283}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Step5</RootNamespace>
-    <AssemblyName>Step5</AssemblyName>
+    <RootNamespace>Hands_On_MVVM</RootNamespace>
+    <AssemblyName>Step1</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -18,6 +18,8 @@
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,12 +77,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContactsWindow.xaml.cs">
-      <DependentUpon>ContactsWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="DataAccess\DataSource.cs" />
-    <Compile Include="Model\ContactList.cs" />
     <Compile Include="Model\DisplayStrategy.cs" />
+    <Compile Include="PersonWindow.xaml.cs">
+      <DependentUpon>PersonWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -95,13 +96,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ViewModel\ContactsViewModel.cs" />
-    <Compile Include="ViewModel\DisplayStrategyViewModel.cs" />
-    <Compile Include="ViewModel\PersonItemViewModel.cs" />
     <Compile Include="ViewModel\PersonViewModel.cs" />
-    <Compile Include="View\ContactsUserControl.xaml.cs">
-      <DependentUpon>ContactsUserControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\PersonUserControl.xaml.cs">
       <DependentUpon>PersonUserControl.xaml</DependentUpon>
     </Compile>
@@ -116,24 +111,21 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ContactsWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\ContactsUserControl.xaml">
+    <Page Include="PersonWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\PersonUserControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <DesignData Include="SampleData\PersonViewModelSampleData.xaml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

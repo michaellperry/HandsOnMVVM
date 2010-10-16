@@ -1,14 +1,14 @@
-﻿<Step1_ViewModel:PersonViewModel xmlns:Step1_ViewModel="clr-namespace:Step1.ViewModel" xmlns:System="clr-namespace:System;assembly=mscorlib" DisplayAs="Aenean mauris" Email="someone@example.com" FirstName="Aliquam" LastName="Aenean" Phone="(111) 555-0100" Title="Aaberg, Jesper">
-	<Step1_ViewModel:PersonViewModel.DisplayAsOptions>
-		<System:String>Curabitur maecenas nam vestibulum</System:String>
-		<System:String>Cras phasellus class sed</System:String>
-		<System:String>Duis praesent accumsan</System:String>
-		<System:String>Adipiscing nullam nunc aliquam consequat</System:String>
-		<System:String>Dis bibendum</System:String>
-		<System:String>Parturient aptent dictumst amet</System:String>
-		<System:String>Ante vestibulum eleifend curae donec</System:String>
-		<System:String>Convallis est</System:String>
-		<System:String>Etiam dignissim hac</System:String>
-		<System:String>Vestibulum fusce adipiscing lorem integer</System:String>
-	</Step1_ViewModel:PersonViewModel.DisplayAsOptions>
-</Step1_ViewModel:PersonViewModel>
+﻿<Hands_On_MVVM_ViewModel:PersonViewModel xmlns:Hands_On_MVVM_ViewModel="clr-namespace:Hands_On_MVVM.ViewModel" xmlns:System="clr-namespace:System;assembly=mscorlib" DisplayAs="Aliquam nam class curabitur" Email="someone@example.com" FirstName="Nam" LastName="Aliquam" Phone="(111) 555-0100" Title="Hac vestibulum nulla arcu">
+	<Hands_On_MVVM_ViewModel:PersonViewModel.DisplayAsOptions>
+		<System:String>Aenean mauris vestibulum phasellus</System:String>
+		<System:String>Adipiscing maecenas sed cras</System:String>
+		<System:String>Curae duis donec integer</System:String>
+		<System:String>Nullam praesent accumsan parturient quisque</System:String>
+		<System:String>Bibendum consequat nunc</System:String>
+		<System:String>Convallis dictumst eleifend</System:String>
+		<System:String>Vivamus dis</System:String>
+		<System:String>Facilisi faucibus</System:String>
+		<System:String>Est habitant etiam</System:String>
+		<System:String>Dignissim aliquam amet</System:String>
+	</Hands_On_MVVM_ViewModel:PersonViewModel.DisplayAsOptions>
+</Hands_On_MVVM_ViewModel:PersonViewModel>

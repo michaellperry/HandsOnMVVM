@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Step1.Model;
+using Hands_On_MVVM.Model;
 
-namespace Step1.ViewModel
+namespace Hands_On_MVVM.ViewModel
 {
     public class PersonViewModel
     {

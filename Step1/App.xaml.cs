@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Windows;
-using Step1.DataAccess;
+using Hands_On_MVVM.DataAccess;
 using System.Windows.Controls;
-using Step1.ViewModel;
+using Hands_On_MVVM.ViewModel;
 
-namespace Step1
+namespace Hands_On_MVVM
 {
     public partial class App : Application
     {

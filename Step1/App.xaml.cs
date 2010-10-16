@@ -2,6 +2,7 @@
 using System.Windows;
 using Step1.DataAccess;
 using System.Windows.Controls;
+using Step1.ViewModel;
 
 namespace Step1
 {
@@ -16,7 +17,7 @@ namespace Step1
 
             DataSource dataSource = new DataSource();
             this.MainWindow = new PersonWindow();
-            this.MainWindow.DataContext = dataSource.GetPerson();
+            this.MainWindow.DataContext = new PersonViewModel(dataSource.GetPerson());
             this.MainWindow.Show();
         }
 

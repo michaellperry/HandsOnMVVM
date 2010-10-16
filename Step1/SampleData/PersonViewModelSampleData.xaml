@@ -1,0 +1,14 @@
+﻿<Step1_ViewModel:PersonViewModel xmlns:Step1_ViewModel="clr-namespace:Step1.ViewModel" xmlns:System="clr-namespace:System;assembly=mscorlib" DisplayAs="Aenean mauris" Email="someone@example.com" FirstName="Aliquam" LastName="Aenean" Phone="(111) 555-0100" Title="Aaberg, Jesper">
+	<Step1_ViewModel:PersonViewModel.DisplayAsOptions>
+		<System:String>Curabitur maecenas nam vestibulum</System:String>
+		<System:String>Cras phasellus class sed</System:String>
+		<System:String>Duis praesent accumsan</System:String>
+		<System:String>Adipiscing nullam nunc aliquam consequat</System:String>
+		<System:String>Dis bibendum</System:String>
+		<System:String>Parturient aptent dictumst amet</System:String>
+		<System:String>Ante vestibulum eleifend curae donec</System:String>
+		<System:String>Convallis est</System:String>
+		<System:String>Etiam dignissim hac</System:String>
+		<System:String>Vestibulum fusce adipiscing lorem integer</System:String>
+	</Step1_ViewModel:PersonViewModel.DisplayAsOptions>
+</Step1_ViewModel:PersonViewModel>

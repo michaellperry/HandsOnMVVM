@@ -18,6 +18,8 @@
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\DataSource.cs" />
+    <Compile Include="Model\DisplayStrategy1.cs" />
     <Compile Include="PersonWindow.xaml.cs">
       <DependentUpon>PersonWindow.xaml</DependentUpon>
     </Compile>
@@ -93,6 +96,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ViewModel\PersonViewModel.cs" />
     <Compile Include="View\PersonUserControl.xaml.cs">
       <DependentUpon>PersonUserControl.xaml</DependentUpon>
     </Compile>
@@ -119,6 +123,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <DesignData Include="SampleData\PersonViewModelSampleData.xaml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

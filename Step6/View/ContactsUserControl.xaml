@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="Step6.View.ContactsUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ListBox ItemsSource="{Binding People}" SelectedItem="{Binding SelectedPersonItem}">
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding Display}"/>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
+</UserControl>

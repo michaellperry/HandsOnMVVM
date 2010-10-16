@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Step1.View
+namespace Hands_On_MVVM.View
 {
     /// <summary>
     /// Interaction logic for PersonUserControl.xaml

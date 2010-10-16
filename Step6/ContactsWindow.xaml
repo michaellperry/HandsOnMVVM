@@ -9,6 +9,6 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <view:ContactsUserControl Grid.Column="0"/>
-        <view:PersonUserControl Grid.Column="1" DataContext="{Binding SelectedPerson}"/>
+        <view:PersonUserControl Grid.Column="1" />
     </Grid>
 </Window>

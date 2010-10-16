@@ -20,10 +20,10 @@
         <Label Grid.Row="3" Target="{Binding ElementName=phone}" Content="_Phone:"/>
         <Label Grid.Row="4" Target="{Binding ElementName=displayAs}" Content="_Display As:"/>
 
-        <TextBox Grid.Row="0" Grid.Column="1" x:Name="firstName" Text="{Binding FirstName}"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="lastName" Text="{Binding LastName}"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="email" Text="{Binding Email}"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="phone" Text="{Binding Phone}"/>
-        <ComboBox Grid.Row="4" Grid.Column="1" x:Name="displayAs" ItemsSource="{Binding DisplayAsOptions}" SelectedItem="{Binding DisplayAs}"/>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="firstName" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="lastName" />
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="email" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="phone" />
+        <ComboBox Grid.Row="4" Grid.Column="1" x:Name="displayAs"  />
     </Grid>
 </UserControl>

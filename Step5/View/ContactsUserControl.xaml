@@ -1,10 +1,10 @@
 ﻿<UserControl x:Class="Step5.View.ContactsUserControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <ListBox ItemsSource="{Binding People}">
+    <ListBox >
         <ListBox.ItemTemplate>
             <DataTemplate>
-                <TextBlock Text="{Binding Display}"/>
+                <TextBlock />
             </DataTemplate>
         </ListBox.ItemTemplate>
     </ListBox>

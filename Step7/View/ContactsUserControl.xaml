@@ -2,16 +2,16 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <StackPanel>
-        <ListBox ItemsSource="{Binding People}" SelectedItem="{Binding SelectedPersonItem}" Height="150">
+        <ListBox   Height="150">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Display}"/>
+                    <TextBlock />
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
         <StackPanel Orientation="Horizontal">
-            <Button Command="{Binding NewPerson}">New</Button>
-            <Button Command="{Binding DeletePerson}">Delete</Button>
+            <Button >New</Button>
+            <Button >Delete</Button>
         </StackPanel>
     </StackPanel>
 </UserControl>

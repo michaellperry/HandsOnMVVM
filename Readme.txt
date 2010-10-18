@@ -75,3 +75,49 @@
             set { _person.Email = value; }
         }
 --------------------------------------
+    public class CommandObject : ICommand
+    {
+        private Action _action;
+
+        public CommandObject(Action action)
+        {
+            _action = action;
+        }
+
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+
+        public event EventHandler CanExecuteChanged;
+
+        public void Execute(object parameter)
+        {
+            _action();
+        }
+    }
+--------------------------------------
+            if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                // Add the corresponding view models.
+                int index = e.NewStartingIndex;
+                foreach (Person person in e.NewItems)
+                {
+                    _personItemViewModels.Insert(index, new PersonItemViewModel(person));
+                    ++index;
+                }
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Remove)
+            {
+                // Delete the corresponding view models.
+                for (int i = 0; i < e.OldItems.Count; i++)
+                {
+                    _personItemViewModels.RemoveAt(i + e.OldStartingIndex);
+                }
+            }
+            else
+            {
+                // Just give up and start over.
+                _personItemViewModels.Clear();
+                PopulatePersonItemViewModels();
+            }

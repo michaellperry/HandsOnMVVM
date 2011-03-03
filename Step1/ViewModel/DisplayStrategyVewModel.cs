@@ -22,5 +22,20 @@ namespace Hands_On_MVVM.ViewModel
         {
             return _person.DisplayUsingStrategy(_displayStrategy);
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == this)
+                return true;
+            DisplayStrategyVewModel that = obj as DisplayStrategyVewModel;
+            if (that == null)
+                return false;
+            return _displayStrategy.Equals(that._displayStrategy);
+        }
+
+        public override int GetHashCode()
+        {
+            return _displayStrategy.GetHashCode();
+        }
     }
 }

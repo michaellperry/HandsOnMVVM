@@ -2,9 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF199018-DBD6-4CF4-BC40-1E329F0B4D46}"
-	ProjectSection(SolutionItems) = preProject
-		Readme.txt = Readme.txt
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hands_On_MVVM", "Step1\Hands_On_MVVM.csproj", "{7BBEF6F5-C919-4708-966A-ACAE3CFE5283}"
 EndProject

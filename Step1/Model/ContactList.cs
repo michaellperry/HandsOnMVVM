@@ -18,5 +18,10 @@ namespace Hands_On_MVVM.Model
         {
             _people.Add(person);
         }
+
+        public void DeletePerson(Person person)
+        {
+            _people.Remove(person);
+        }
     }
 }

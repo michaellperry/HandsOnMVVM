@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Hands_On_MVVM.DataAccess;
+using Hands_On_MVVM.ViewModel;
 
 namespace Hands_On_MVVM
 {
@@ -21,6 +12,12 @@ namespace Hands_On_MVVM
         public ContactsWindow()
         {
             InitializeComponent();
+        }
+
+        private void ContactsWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataSource dataSource = new DataSource();
+            DataContext = new ContactsViewModel(dataSource.LoadContacts());
         }
     }
 }

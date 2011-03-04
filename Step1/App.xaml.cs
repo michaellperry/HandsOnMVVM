@@ -14,11 +14,6 @@ namespace Hands_On_MVVM
             EventManager.RegisterClassHandler(typeof(TextBox),
                 TextBox.GotFocusEvent,
                 new RoutedEventHandler(TextBox_GotFocus));
-
-            DataSource dataSource = new DataSource();
-            this.MainWindow = new PersonWindow();
-            this.MainWindow.DataContext = new PersonViewModel(dataSource.GetPerson());
-            this.MainWindow.Show();
         }
 
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)

@@ -1,5 +1,6 @@
 ﻿<UserControl
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<<<<<<< HEAD
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Step1.View.PersonUserControl"
     Background="#FF353535" d:DesignWidth="415.007" d:DesignHeight="280.387">
 	<UserControl.Resources>
@@ -8,24 +9,37 @@
 				<TextBlock Text="{Binding Mode=OneWay}"/>
 			</StackPanel>
 		</DataTemplate>
+=======
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Hands_On_MVVM.View.PersonUserControl"
+    Background="#FF353535" d:DesignWidth="508.007" d:DesignHeight="318.387">
+	<UserControl.Resources>
+>>>>>>> a99901b09612b10e355b6a0a03717e1337a1b6ce
 		<DataTemplate x:Key="StringTemplate1">
 			<StackPanel>
 				<TextBlock Text="{Binding Mode=OneWay}"/>
 			</StackPanel>
 		</DataTemplate>
 	</UserControl.Resources>
+<<<<<<< HEAD
     <Grid Margin="5" d:DataContext="{d:DesignData /SampleData/PersonViewModelSampleData.xaml}">
+=======
+    <Grid Margin="5">
+>>>>>>> a99901b09612b10e355b6a0a03717e1337a1b6ce
     	<Grid.RowDefinitions>
     		<RowDefinition Height="Auto"/>
     		<RowDefinition Height="Auto"/>
     		<RowDefinition Height="Auto"/>
     		<RowDefinition Height="Auto"/>
     		<RowDefinition Height="Auto"/>
+<<<<<<< HEAD
     		<RowDefinition Height="0.205*"/>
+=======
+    		<RowDefinition Height="0.207*"/>
+>>>>>>> a99901b09612b10e355b6a0a03717e1337a1b6ce
     	</Grid.RowDefinitions>
     	<Grid.ColumnDefinitions>
     		<ColumnDefinition Width="Auto"/>
-    		<ColumnDefinition Width="*"/>
+    		<ColumnDefinition/>
     	</Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" Target="{Binding ElementName=firstName}" Content="_First Name:"/>
@@ -33,11 +47,20 @@
         <Label Grid.Row="2" Target="{Binding ElementName=email}" Content="_Email:"/>
         <Label Grid.Row="3" Target="{Binding ElementName=phone}" Content="_Phone:"/>
             
+<<<<<<< HEAD
         <TextBox Grid.Row="0" Grid.Column="1" x:Name="firstName" Text="{Binding FirstName}" d:DataContext="{d:DesignData /SampleData/PersonViewModelSampleData.xaml}" />
         <TextBox Grid.Row="1" Grid.Column="1" x:Name="lastName" Text="{Binding LastName}" d:DataContext="{d:DesignData /SampleData/PersonViewModelSampleData.xaml}" />
         <TextBox Grid.Row="2" Grid.Column="1" x:Name="email" Text="{Binding Email}" d:DataContext="{d:DesignData /SampleData/PersonViewModelSampleData.xaml}" />
         <TextBox Grid.Row="3" Grid.Column="1" x:Name="phone" Text="{Binding Phone}" d:DataContext="{d:DesignData /SampleData/PersonViewModelSampleData.xaml}" />
         <Label Content="Display As:" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,5,0,5"/>
         <ComboBox Grid.Column="1" Grid.Row="4" d:LayoutOverrides="Height" ItemTemplate="{DynamicResource StringTemplate1}" ItemsSource="{Binding DisplayAsOptions}" VerticalAlignment="Center" SelectedItem="{Binding DisplayAs}"/>
+=======
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="firstName" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="lastName" />
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="email" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="phone" />
+        <Label Content="Display As:" Grid.Row="4" VerticalAlignment="Center" Margin="5" d:LayoutOverrides="Width"/>
+        <ComboBox Grid.Column="1" Grid.Row="4" ItemTemplate="{DynamicResource StringTemplate1}" ItemsSource="{Binding DisplayAsOptions}" VerticalAlignment="Center" SelectedItem="{Binding DisplayAs}" Margin="5"/>
+>>>>>>> a99901b09612b10e355b6a0a03717e1337a1b6ce
     </Grid>
 </UserControl>

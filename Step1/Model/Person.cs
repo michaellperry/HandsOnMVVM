@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Step1.Model
+namespace Hands_On_MVVM.Model
 {
     public class Person : INotifyPropertyChanged
     {

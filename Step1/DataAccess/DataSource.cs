@@ -1,7 +1,7 @@
 ﻿using System;
-using Step1.Model;
+using Hands_On_MVVM.Model;
 
-namespace Step1.DataAccess
+namespace Hands_On_MVVM.DataAccess
 {
     public class DataSource
     {

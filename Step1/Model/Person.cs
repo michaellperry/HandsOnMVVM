@@ -19,9 +19,9 @@ namespace Hands_On_MVVM.Model
             set
             {
                 _firstName = value;
-                FirePropertyChanged("Title");
                 FirePropertyChanged("DisplayAsOptions");
                 FirePropertyChanged("DisplayAs");
+                FirePropertyChanged("Title");
             }
         }
 
